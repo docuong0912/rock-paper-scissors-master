@@ -1,0 +1,69 @@
+:root{
+  --keo-gradient-1:hsl(39, 89%, 49%);
+  --keo-gradient-2:hsl(40, 84%, 53%);
+  --giay-gradient-1:hsl(230, 89%, 62%);
+  --giay-gradient-2:hsl(230, 89%, 65%);
+  --bua-gradient-1: hsl(349, 71%, 52%);
+  --bua-gradient-2:hsl(349, 70%, 56%);
+  /*text*/
+  --dark-text:hsl(229, 25%, 31%);
+  --score-text:hsl(229, 64%, 46%);
+  --header-outline:hsl(217, 16%, 45%);
+  /*background*/
+  --bg-gradient-1:hsl(214, 47%, 23%);
+  --bg-gradient-2:hsl(237, 49%, 15%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.container{
+  background-image: radial-gradient(var(--bg-gradient-1),var(--bg-gradient-2));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer p{
+  color: white;
+}
+footer div{
+  border:1px solid white;
+  width:90px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: .5s;
+}
+footer div:hover{
+  background: white;
+  color:black;
+  cursor:pointer;
+}
+footer div:hover p{
+  color:black;
+}
+@media screen and (min-width: 1024px){
+  footer {
+    justify-content: flex-end;
+  }
+  footer div{
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+header{
+    width: 90%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header b,p{
+    text-transform: uppercase;
+    color:black;
+}
+header b{
+    font-size: 10px;
+}
+header p{
+    font-size: 30px;
+}
+.title{
+    width: 30%;
+    color: white;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.point-container{
+    background-color: white;
+    padding: 5px 10px;
+    text-align: center;
+    width: 70px;
+}
+@media screen and (min-width: 1024px){
+    header{
+        width: 40%;
+        margin-top: 30px;
+    }
+    .title{
+        width: 10%;
+    }
+}
